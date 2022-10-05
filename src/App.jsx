@@ -1,17 +1,27 @@
-import React from 'react'
-import './App.css'
 
-import { Slider } from './components/imports'
+// Libs
+import React from 'react'
+
+// Styles
+import './App.scss'
+
+// Components
+import { Swiper } from './components/imports'
+
+// Load Data(Fake data)
+import { slides } from './configs/slides'
 
 function App() {
 
   return (
     <div className="wrapper">
-      {/* <aside className="sidebar"> */}
-         {/* Smt. sidebar content */}
-      {/* </aside> */}
+      <header className="header">
+        <a className="header__link" href="https://github.com/VladislavKori">Kori Dev</a>
+      </header>
 
-      <Slider />
+      <main className="content">
+        <Swiper slides={slides} />
+      </main>
 
     </div>
   )

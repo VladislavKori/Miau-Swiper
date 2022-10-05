@@ -1,0 +1,45 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+@media screen and  (max-width: 450px) {
+    .swiper {
+        &__list {
+            max-width: 320px;
+        }
+    }
+}
+
+@media screen and  (max-width: 380px) {
+    .swiper {
+        &__list {
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and  (max-width: 350px) {
+    .swiper {
+        &__list {
+            max-width: 250px;
+        }
+    }
+}
