@@ -9,18 +9,6 @@
   display: flex;
   font-family: var(--font-family);
 }
-.container {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  overflow-y: scroll;
-  /* padding: 20px 0; */
-}
 .container::-webkit-scrollbar {
   width: 0px;
-}
-.sidebar {
-  flex-basis: 300px;
-  background: rgb(224, 224, 224);
-  height: 100%;
 }

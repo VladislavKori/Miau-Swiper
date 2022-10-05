@@ -10,21 +10,11 @@ let scroller = Scroll.scroller
 
 function Slider() {
 
-  const scrollToElement = (elem) => {
-    console.log('scroll..')
-    scroller.scrollTo(String(elem), {
-      duration: 800,
-      smooth: 'easeInOutQuart',
-      containerId: "container"
-    })
-  }
-
   const elemArrow = new Array(20).fill('simple text');
 
   return (
-    <div className="container" id="container">
+    <div className="container">
       <div className="slider" >
-        {/* <button onClick={() => scrollToElement(1)}>scroll bot</button> */}
         <ul className="slider__list">
           {elemArrow.map((item, index) => (
             <React.Fragment key={index}>
