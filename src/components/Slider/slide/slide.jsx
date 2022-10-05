@@ -1,12 +1,15 @@
 import React from 'react'
+import {Element} from 'react-scroll';
 
 import './slide.css'
 
-function slide({text}) {
+function slide({text, id}) {
   return (
-    <li className="slide">
-        {text}
-    </li>
+    <Element name={String(id)} id={String(id)}>
+      <li className="slide">
+          {text + id}
+      </li>
+    </Element>
   )
 }
 
