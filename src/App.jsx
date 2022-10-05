@@ -11,9 +11,7 @@ function App() {
          Smt. sidebar content
       </aside>
 
-      <div className="container">
-        <Slider />
-      </div>
+      <Slider />
 
     </div>
   )
