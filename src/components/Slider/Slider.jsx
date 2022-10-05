@@ -1,31 +1,34 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import Scroll from 'react-scroll'
 
 import './slider.css'
 
 import Slide from './slide/slide'
 
+// let scroll    = Scroll.animateScroll;
+let scroller = Scroll.scroller
+
 function Slider() {
 
-  const slider = useRef(null)
-
-  useEffect(() => {
-    const innerSlider = slider.current;
-    const sliderListener = innerSlider.addEventListener('click', e => {
-      console.log(e)
+  const scrollToElement = (elem) => {
+    console.log('scroll..')
+    scroller.scrollTo(String(elem), {
+      duration: 800,
+      smooth: 'easeInOutQuart',
+      containerId: "container"
     })
-
-    return () => removeEventListener('click', sliderListener)
-  }, [])
+  }
 
   const elemArrow = new Array(20).fill('simple text');
 
   return (
-    <div className="container" ref={slider}>
+    <div className="container" id="container">
       <div className="slider" >
+        {/* <button onClick={() => scrollToElement(1)}>scroll bot</button> */}
         <ul className="slider__list">
           {elemArrow.map((item, index) => (
             <React.Fragment key={index}>
-              <Slide text={item} />
+              <Slide text={item} id={index} />
             </React.Fragment>
           ))}
         </ul>
