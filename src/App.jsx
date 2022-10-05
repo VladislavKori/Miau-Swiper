@@ -7,9 +7,9 @@ function App() {
 
   return (
     <div className="wrapper">
-      <aside className="sidebar">
-         Smt. sidebar content
-      </aside>
+      {/* <aside className="sidebar"> */}
+         {/* Smt. sidebar content */}
+      {/* </aside> */}
 
       <Slider />
 
