@@ -23,7 +23,10 @@ function slide({preview, title}) {
         className="slide__content"
         style={SLIDE_STYLES}
       >
-        <h1 className="slide__title">{title}</h1>        
+        <div className="slide__info">
+          <h1 className="slide__title">{title}</h1>
+          <p className="slide__date">22.06.2022</p>  
+        </div>        
       </div>
 
       <nav className="slide__bar">

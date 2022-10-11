@@ -23,7 +23,7 @@
 @media screen and  (max-width: 450px) {
     .swiper {
         &__list {
-            max-width: 320px;
+            max-width: none;
         }
     }
 }
@@ -31,7 +31,7 @@
 @media screen and  (max-width: 380px) {
     .swiper {
         &__list {
-            max-width: 300px;
+            max-width: none;
         }
     }
 }
@@ -39,7 +39,7 @@
 @media screen and  (max-width: 350px) {
     .swiper {
         &__list {
-            max-width: 250px;
+            max-width: none;
         }
     }
 }

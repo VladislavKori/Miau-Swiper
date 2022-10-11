@@ -6,7 +6,7 @@ import React from 'react'
 import './App.scss'
 
 // Components
-import { Swiper } from './components/imports'
+import { Swiper, Sidebar } from './components/imports'
 
 // Load Data(Fake data)
 import { slides } from './configs/slides'
@@ -15,6 +15,8 @@ function App() {
 
   return (
     <div className="wrapper">
+
+      <Sidebar />
 
       <main className="content">
         <Swiper slides={slides} />

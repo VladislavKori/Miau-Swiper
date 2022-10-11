@@ -1,0 +1,67 @@
+.sidebar {
+  width: 400px;
+  background: rgb(46, 46, 46);
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  &__list {
+    margin: 15px 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  &__footer {
+    background: rgb(31, 31, 31);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-radius: 10px; 
+  }
+
+  &__footer-user {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    text-decoration: none;
+
+    &-avatar {
+      width: 25px;
+      height: 25px;
+    }
+
+    &-name {
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+
+  &__settings-icon {
+    width: 18px;
+    height: auto;
+    cursor: pointer;
+    fill: #fff;
+    transition: fill 0.1s ease-in-out;
+
+    &:hover {
+      fill: rgb(129, 175, 171);
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+}

@@ -1,11 +1,11 @@
 export const slides = [
     {
-        preview: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/d6209773116977.5bfecec84bb98.gif',
-        title: 'Simple Slider'
-    },
-    {
         preview: 'https://cdn.dribbble.com/users/2553526/screenshots/9709542/media/e1a6fa9e1d71fd56dffe91c576e806b5.gif',
         title: 'Simple Text'
+    },
+    {
+        preview: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/d6209773116977.5bfecec84bb98.gif',
+        title: 'Simple Slider'
     },
     {
         preview: 'https://cdn.dribbble.com/users/2922788/screenshots/9893340/catwalk.gif',
