@@ -4,6 +4,6 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: '/Miau-Swiper/',
+  base: '/Miau-Swiper/',
   plugins: [react(), svgr()],
 })
