@@ -1,6 +1,7 @@
 
 // Libs
 import React from 'react'
+import SlideBar from '../slideBar/SlideBar'
 
 // Styles
 import './slide.scss'
@@ -17,9 +18,17 @@ function slide({preview, title}) {
   return (
     <li 
       className="slide"
-      style={SLIDE_STYLES}
     >
-      <h1 className="slide__title">{title}</h1>
+      <div
+        className="slide__content"
+        style={SLIDE_STYLES}
+      >
+        <h1 className="slide__title">{title}</h1>        
+      </div>
+
+      <nav className="slide__bar">
+        <SlideBar />
+      </nav> 
     </li>
   )
 }

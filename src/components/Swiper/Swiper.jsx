@@ -6,7 +6,7 @@ import React from 'react'
 import './swiper.scss'
 
 // Components
-import Slide from './slide/slide'
+import Slide from '../slide/slide'
 
 function Swiper({slides}) {
 

@@ -1,0 +1,45 @@
+.slidebar {
+  margin: 10px;
+  background: rgb(31, 31, 31);
+  padding: 10px 5px;
+  border-radius: 5px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .slidebar__icon {
+      fill: rgb(129, 175, 171);
+    }
+
+    &:hover .slidebar__icon_heart {
+      fill: rgb(231, 126, 126);
+    }
+  }
+
+  &__icon {
+    width: 35px;
+    height: auto;
+    fill: #fff;
+    transition: fill 0.2s ease-in-out;
+  }
+
+  &__value {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  &__heart_active {
+    fill: rgb(224, 98, 98);
+  }
+}

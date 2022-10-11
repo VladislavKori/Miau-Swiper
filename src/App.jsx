@@ -15,9 +15,6 @@ function App() {
 
   return (
     <div className="wrapper">
-      <header className="header">
-        <a className="header__link" href="https://github.com/VladislavKori">Kori Dev</a>
-      </header>
 
       <main className="content">
         <Swiper slides={slides} />
